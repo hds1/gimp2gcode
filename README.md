@@ -33,7 +33,7 @@ Output example:
 ; Width: 90.0 [mm], Height: 117.3 [mm]
 ; Bottom Left corner of pic is Pos 0|0 for the laser.
 ; Laser plot direction is picture bottom up.
-; File: (null)
+; File: <name of picture file if saved>
 ;
 ;
 G21 ; Set units to mm
