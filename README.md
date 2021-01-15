@@ -24,6 +24,7 @@ Prepare picture:
 
 Output example:
 
+<pre>
 ; gimp2gcode for Laser (grbl 1.1)
 ; Jan 2021 Heiko Schroeter
 ; Width: 600 [px], Height: 782 [px]
@@ -54,3 +55,4 @@ G01 X0.00 Y0.30 S50 ;u
 ;
 M5 ; Laser Off
 G00 X0 Y0 S0 ; romanus eunt domus ... 
+</pre>
