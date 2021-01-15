@@ -20,3 +20,37 @@ Prepare picture:
 - Convert to 8Bit grayscale
 - Remove Alphachannel
 - Apply Menu -> "Filter - Misc - gimp2gcode"
+
+
+Output example:
+
+; gimp2gcode for Laser (grbl 1.1)
+; Jan 2021 Heiko Schroeter
+; Width: 600 [px], Height: 782 [px]
+; Laserwidth: 0.15 [mm]
+; {Width[mm] = laserwidth * PXwidth, Height[mm] = laserwidth * PXheight}
+; Width: 90.0 [mm], Height: 117.3 [mm]
+; Bottom Left corner of pic is Pos 0|0 for the laser.
+; Laser plot direction is picture bottom up.
+; File: (null)
+;
+;
+G21 ; Set units to mm
+G90 ; Use absolute coordinates
+S0  ; Power off laser i.e. PWM=0
+M4  ; Activate Laser with dynamics
+F1500 ; Set speed
+;
+;
+G00 X0 Y0 S0
+;-->--
+G01 X90.00 Y0.00 S50
+G01 X90.00 Y0.15 S50 ;u
+;--<--
+G01 X0.00 Y0.15 S50
+G01 X0.00 Y0.30 S50 ;u
+.....
+.....
+;
+M5 ; Laser Off
+G00 X0 Y0 S0 ; romanus eunt domus ... 
