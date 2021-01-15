@@ -16,6 +16,12 @@ which will be read in when the plugin is called next time.
 
 Created NGC files will also be saved to your HOMEDIR.
 
+To calculate the size of an engraved picture you need the width of your laser.
+Typically 0.1 to 0.2mm.
+Engraved size is:
+Width[mm] = Pixel(width) * laserwidth
+Height[mm] = Pixel(height) * laswerwidth
+
 Prepare picture:
 - Convert to 8Bit grayscale
 - Remove Alphachannel
