@@ -12,11 +12,11 @@ Not tested on Windows or Macs.
 
 The plugin comes with some default settings for GRBL.
 Settings can be changed and saved to your HOMEDIR -> gimp2gcode.conf .
-which will be read in when the plugin is called next time.
+Which will be read in next time when the plugin is called.
 
-Created NGC files will also be saved to your HOMEDIR.
+Created NGC files will be saved to your HOMEDIR.
 
-To calculate the size of an engraved picture you need the width of your laser.
+To calculate the size of an engraved picture you need the width of your laser tip.
 Typically 0.1 to 0.2mm.
 Engraved size is:
 Width[mm] = Pixel(width) * laserwidth
