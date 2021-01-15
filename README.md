@@ -24,7 +24,7 @@ Height[mm] = Pixel(height) * laswerwidth
 
 Prepare picture:
 - Convert to 8Bit grayscale
-- Remove Alphachannel
+- Remove Alpha Channel
 - Apply Menu -> "Filter - Misc - gimp2gcode"
 
 
